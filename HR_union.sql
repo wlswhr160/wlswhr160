@@ -1,0 +1,1 @@
+-- 직업ID IT_PROG + 급여(SALARY)가 급여 테이블의 D레벨에 있는 직원 -> UNION(합집합)
