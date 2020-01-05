@@ -1,0 +1,17 @@
+version: "3"
+services:
+    mymysql:
+        image: "test_mysql"
+        ports: 
+            - "3306:3306"
+        volumes:
+            - $HOME/mysqlRepl/mysql:/data/db
+        networks: 
+            - mysql-networks
+        environment:
+            - MYSQL_ALLOW_EMPTY_PASSWORD=true
+        command: mysql --replSet myapp
+
+networks: 
+    mysql-networks:
+        driver: bridge
