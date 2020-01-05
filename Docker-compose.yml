@@ -14,4 +14,4 @@ services:
 
 networks: 
     mysql-networks:
-        driver: bridge
+        driver: bridge 
